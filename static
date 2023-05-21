@@ -1,0 +1,16 @@
+using System;
+
+public class Fibonacci {
+    public static int CalculateFibonacci(int n) {
+        if (n <= 1)
+            return n;
+        return CalculateFibonacci(n - 1) + CalculateFibonacci(n - 2);
+    }
+
+    public static void Main(string[] args) {
+        int num = 10;
+        for (int i = 0; i < num; i++) {
+            Console.Write(CalculateFibonacci(i) + " ");
+        }
+    }
+}
